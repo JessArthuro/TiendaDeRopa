@@ -11,8 +11,8 @@
     <body ng-controller="UsersController">
         <div class="container">
             <div class="jumbotron text-center">
-                <h1>Total de usuarios registrados <span class="label label-info">{{ users.length}}</span></h1>
-                <button type="submit" class="btn btn-primary btn-lg" ng-click="get()">Cargar usuarios</button>
+                <h1>Productos<span class="label label-info">{{ users.length}}</span></h1>
+                <button type="submit" class="btn btn-primary btn-lg" ng-click="get()">Total</button>
             </div>
 
             <div id="todo-list" class="row">
@@ -20,7 +20,7 @@
 
                     <div class="checkbox" ng-repeat="item in users">
                         <label>
-                            <input type="checkbox" ng-click="remove(item)"> {{ item.nombre}} {{item.paterno}} {{item.materno}}
+                            <input type="checkbox" ng-click="remove(item)"> {{ item.marca}} {{item.tipo}} {{item.cantidad}}{{item.color}}{{item.precio}}
                         </label>
                     </div>
 
@@ -31,13 +31,17 @@
                 <div class="col-sm-8 col-sm-offset-2 text-center">
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control input-lg text-center" placeholder="Nombre" ng-model="user.nombre">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Marca" ng-model="user.marca">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control input-lg text-center" placeholder="Paterno" ng-model="user.paterno">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Tipo" ng-model="user.tipo">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control input-lg text-center" placeholder="Materno" ng-model="user.materno">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Cantidad" ng-model="user.cantidad">
+                            <div class="form-group">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Color" ng-model="user.color">
+                            <div class="form-group">
+                            <input type="text" class="form-control input-lg text-center" placeholder="Precio" ng-model="user.precio">
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg" ng-click="create(user)">Agregar</button>
                     </form>
