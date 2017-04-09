@@ -1,9 +1,7 @@
-Francisco Salvador Ballina Sánchez
-Romana Carolina Novelo Can
+# TiendaDeRopa
+Jesus Arturo Carmona Aguirre
+Bernabe Cantun Dominguez
 
-Esqueleto de una aplicación base para usar Nodejs y AngularJs
-
-Requisitos en el servidor
-
-- Nodejs
-- Servidor de Base de Datos PostgreSQL
+ *** Aplicacion para el Registro de Ropa ***
+Servior de Base de Datos Postgresql
+Servidor NodeJs

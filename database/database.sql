@@ -1,11 +1,13 @@
 
-DROP TABLE IF EXISTS usuarios CASCADE;
+DROP TABLE IF EXISTS Ropa CASCADE;
 
-CREATE TABLE usuarios
+CREATE TABLE Ropa
 (
     id bigserial NOT NULL,
-    nombre text NOT NULL,
-    paterno text NOT NULL,
-    materno text,
+    marca text NOT NULL,
+    tipo text NOT NULL,
+    cantidad text,
+    color text,
+    precio text,
     PRIMARY KEY(id)
 );
